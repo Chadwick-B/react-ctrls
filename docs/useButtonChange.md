@@ -1,4 +1,4 @@
-Run the passed callback function on any gamepad button update including [touch](https://developer.mozilla.org/en-US/docs/Web/API/GamepadButton/touched) and [value](https://developer.mozilla.org/en-US/docs/Web/API/GamepadButton/value)
+Run the passed callback function on any gamepad button update including [touch](https://developer.mozilla.org/en-US/docs/Web/API/GamepadButton/touched) and [value](https://developer.mozilla.org/en-US/docs/Web/API/GamepadButton/value).
 
 ## Example
 
