@@ -1,0 +1,68 @@
+{
+  "name": "react-ctrls",
+  "description": "React hooks to easily implement gamepad controls",
+  "author": "Chadwick Blewett",
+  "license": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chadwick-B/react-ctrls"
+  },
+  "main": "index.js",
+  "module": "esm/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build-types": "tsc --project ./tsconfig.types.json",
+    "build-cjs": "tsc --project ./tsconfig.cjs.json",
+    "build-esm": "tsc --project ./tsconfig.esm.json",
+    "build": "npm run build-cjs && npm run build-esm && npm run build-types && echo 'Completed'",
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags"
+  },
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./index.js"
+    },
+    "./useGamepadEvents": {
+      "import": "./esm/useGamepadEvents.js",
+      "require": "./useGamepadEvents.js"
+    },
+    "./useAxisChange": {
+      "import": "./esm/useAxisChange.js",
+      "require": "./useAxisChange.js"
+    },
+    "./useButtonChange": {
+      "import": "./esm/useButtonChange.js",
+      "require": "./useButtonChange.js"
+    },
+    "./useButtonDown": {
+      "import": "./esm/useButtonDown.js",
+      "require": "./useButtonDown.js"
+    },
+    "./useButtonUp": {
+      "import": "./esm/useButtonUp.js",
+      "require": "./useButtonUp.js"
+    }
+  },
+  "files": [
+    "dist",
+    "esm"
+  ],
+  "keywords": [
+    "react",
+    "react-hooks",
+    "gamepad",
+    "use-gamepad"
+  ],
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "react": "^16.8.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
