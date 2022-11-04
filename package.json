@@ -47,22 +47,23 @@
     }
   },
   "files": [
-    "dist",
-    "esm"
+    "dist"
   ],
   "keywords": [
     "react",
     "react-hooks",
     "gamepad",
-    "use-gamepad"
+    "controller"
   ],
   "devDependencies": {
     "@types/react": "^18.0.21",
-    "react": "^16.8.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   }
 }
