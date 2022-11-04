@@ -3,7 +3,7 @@
   "description": "React hooks to easily implement gamepad controls",
   "author": "Chadwick Blewett",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Chadwick-B/react-ctrls"
@@ -22,28 +22,28 @@
   },
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./index.js"
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js"
     },
     "./useGamepadEvents": {
-      "import": "./esm/useGamepadEvents.js",
+      "import": "./dist/esm/useGamepadEvents.js",
       "require": "./useGamepadEvents.js"
     },
     "./useAxisChange": {
-      "import": "./esm/useAxisChange.js",
-      "require": "./useAxisChange.js"
+      "import": "./dist/esm/useAxisChange.js",
+      "require": "./dist/useAxisChange.js"
     },
     "./useButtonChange": {
-      "import": "./esm/useButtonChange.js",
-      "require": "./useButtonChange.js"
+      "import": "./dist/esm/useButtonChange.js",
+      "require": "./dist/useButtonChange.js"
     },
     "./useButtonDown": {
-      "import": "./esm/useButtonDown.js",
-      "require": "./useButtonDown.js"
+      "import": "./dist/esm/useButtonDown.js",
+      "require": "./dist/useButtonDown.js"
     },
     "./useButtonUp": {
-      "import": "./esm/useButtonUp.js",
-      "require": "./useButtonUp.js"
+      "import": "./dist/esm/useButtonUp.js",
+      "require": "./dist/useButtonUp.js"
     }
   },
   "files": [
