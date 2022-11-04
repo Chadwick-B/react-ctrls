@@ -3,7 +3,7 @@
   "description": "React hooks to easily implement gamepad controls",
   "author": "Chadwick Blewett",
   "license": "MIT",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/Chadwick-B/react-ctrls"
@@ -27,7 +27,7 @@
     },
     "./useGamepadEvents": {
       "import": "./dist/esm/useGamepadEvents.js",
-      "require": "./useGamepadEvents.js"
+      "require": "./dist/useGamepadEvents.js"
     },
     "./useAxisChange": {
       "import": "./dist/esm/useAxisChange.js",
